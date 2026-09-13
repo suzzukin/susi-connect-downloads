@@ -1,29 +1,38 @@
 # susi connect
 
-Сборки клиента. Здесь только файлы, без исходного кода.
+Сборки клиента: android и windows. Здесь только файлы, без исходного кода.
+Client builds for android and windows. Files only, no source.
 
-<p>
-  <a href="https://play.google.com/store/apps/details?id=com.susinetwork.connect"><img alt="Доступно в Google Play" src="badges/google-play-ru.svg" height="56"></a>
-  <a href="https://apps.apple.com/app/id6759531907"><img alt="Загрузите в App Store" src="badges/app-store-ru.svg" height="56"></a>
+<p align="left">
+  <a href="https://play.google.com/store/apps/details?id=com.susinetwork.connect"><img alt="Get it on Google Play" src="badges/google-play.svg" width="162"></a>
+  &nbsp;
+  <a href="https://apps.apple.com/app/id6759531907"><img alt="Download on the App Store" src="badges/app-store.svg" width="144"></a>
 </p>
 
-Прямые загрузки, если магазин недоступен:
+**Прямые загрузки, если магазин недоступен · Direct downloads when a store is out of reach**
 
-[![apk](https://img.shields.io/badge/apk-android-0F1113?style=for-the-badge&logo=android&logoColor=F7F8FA&labelColor=1C1E20)](https://github.com/suzzukin/susi-connect-downloads/releases/latest/download/susi-connect-android.apk)
-[![exe](https://img.shields.io/badge/установщик-windows-0F1113?style=for-the-badge&logo=windows&logoColor=F7F8FA&labelColor=1C1E20)](https://github.com/suzzukin/susi-connect-downloads/releases/latest)
+<p align="left">
+  <a href="https://github.com/suzzukin/susi-connect-downloads/releases/latest/download/susi-connect-android.apk"><img alt="Download the APK" src="https://img.shields.io/badge/apk-android-1C1E20?style=for-the-badge&logo=android&logoColor=F7F8FA&labelColor=0F1113"></a>
+  &nbsp;
+  <a href="https://github.com/suzzukin/susi-connect-downloads/releases/latest"><img alt="Download the installer" src="https://img.shields.io/badge/setup-windows-1C1E20?style=for-the-badge&logo=windows&logoColor=F7F8FA&labelColor=0F1113"></a>
+</p>
 
 ## Android
 
-Кнопка «apk» отдаёт файл из последнего релиза. Откройте его на телефоне — система спросит разрешение установить файл не из магазина.
+Кнопка apk отдаёт файл из последнего релиза: откройте его на телефоне, система спросит разрешение установить файл не из магазина. Подпись та же, что у сборки в google play, — обновления совместимы в обе стороны.
 
-Подпись та же, что у сборки в google play, поэтому обновления совместимы в обе стороны.
+The apk button serves the file from the latest release: open it on the phone and Android will ask for permission to install a file from outside the store. It carries the same signature as the google play build, so updates work in either direction.
 
 ## Windows
 
-Установщик появится здесь же.
+Установщик появится здесь же. · The installer will appear here.
 
-## Контрольные суммы
+## Контрольные суммы · Checksums
 
-В каждом релизе лежит `SHA256SUMS.txt`:
+В каждом релизе лежит `SHA256SUMS.txt`. · Every release ships `SHA256SUMS.txt`.
 
     sha256sum susi-connect-android.apk
+
+## Поддержка · Support
+
+@susi_support_bot
