@@ -35,4 +35,4 @@ The apk button serves the file from the latest release: open it on the phone and
 
 ## Поддержка · Support
 
-@susi_support_bot
+[@susi_network_support](https://t.me/susi_network_support)
