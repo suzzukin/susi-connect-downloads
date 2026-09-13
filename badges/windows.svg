@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195" height="60" viewBox="0 0 195 60" role="img" aria-label="СКАЧАТЬ для windows">
+  <rect x="0.75" y="0.75" width="193.5" height="58.5" rx="10" fill="#0F1113" stroke="#3A3F44" stroke-width="1.5"/>
+  <g transform="translate(16, 14)" fill="#F7F8FA"><path d="M0 3.4 9.1 2.1v8.6H0V3.4Zm10.2-1.5L22 0.3v10.4H10.2V1.9ZM0 11.8h9.1v8.6L0 19.1v-7.3Zm10.2 0H22v10.4l-11.8-1.6v-8.8Z"/></g>
+  <text x="58" y="26" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10.5" fill="#969DA4" letter-spacing="0.6">СКАЧАТЬ</text>
+  <text x="58" y="43" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" fill="#F7F8FA">для windows</text>
+</svg>
