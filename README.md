@@ -25,13 +25,16 @@ The apk button serves the file from the latest release: open it on the phone and
 
 ## Windows
 
-Установщик появится здесь же. · The installer will appear here.
+Кнопка setup отдаёт установщик из последнего релиза. Windows 10 (1809) и новее, x64 и arm64; установщик ставит и приложение, и службу туннеля, поэтому просит права администратора. Он не подписан — SmartScreen предупредит: «Подробнее» → «Выполнить в любом случае». Обновления приложение находит само и показывает в «Настройки → О программе».
+
+The setup button serves the installer from the latest release. Windows 10 (1809) or newer, x64 and arm64; it installs the app and the tunnel service, so it asks for administrator rights. It is not code-signed — SmartScreen will warn: "More info" → "Run anyway". The app finds updates itself and names them under Settings → About.
 
 ## Контрольные суммы · Checksums
 
 В каждом релизе лежит `SHA256SUMS.txt`. · Every release ships `SHA256SUMS.txt`.
 
     sha256sum susi-connect-android.apk
+    sha256sum susi-connect-windows-setup.exe
 
 ## Поддержка · Support
 
