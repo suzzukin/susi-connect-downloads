@@ -33,9 +33,9 @@ The setup button serves the installer from the latest release. Windows 10 (1809)
 
 ## Linux
 
-Пакет для своего дистрибутива — из последнего релиза: `.deb` (Ubuntu, Debian, Mint), `.rpm` (Fedora, RHEL, openSUSE), пакет pacman (Arch) или `.tar.gz` с `install.sh` для остальных, x86_64 и ARM64. Пакет ставит приложение и службу туннеля; служба запускается сразу и при каждой загрузке. Нужны Ubuntu 18.04, Debian 9, Fedora 28, RHEL 8, openSUSE Leap 15 или новее. Обновления приложение находит само и показывает в «Настройки → О приложении».
+Пакет для своего дистрибутива — из последнего релиза: `.deb` (Ubuntu, Debian, Mint), `.rpm` (Fedora, RHEL, openSUSE), пакет pacman (Arch) или `.tar.gz` с `install.sh` для остальных, x86_64 и ARM64. Пакет ставит приложение и службу туннеля; служба запускается сразу и при каждой загрузке. Нужны Ubuntu 18.04, Debian 9, Fedora 28, RHEL 8, openSUSE Leap 15 или новее. `.deb`, `.rpm` и pacman подтягивают GTK 3 сами; архив рассчитывает на GTK 3, который есть на любом рабочем столе, и `install.sh` скажет, если его нет. Обновления приложение находит само и показывает в «Настройки → О приложении».
 
-The package for your distribution, from the latest release: `.deb` (Ubuntu, Debian, Mint), `.rpm` (Fedora, RHEL, openSUSE), a pacman package (Arch) or `.tar.gz` with `install.sh` for the rest, x86_64 and ARM64. It installs the app and the tunnel service; the service starts at once and at every boot. Ubuntu 18.04, Debian 9, Fedora 28, RHEL 8, openSUSE Leap 15 or newer. The app finds updates itself and names them under Settings → About.
+The package for your distribution, from the latest release: `.deb` (Ubuntu, Debian, Mint), `.rpm` (Fedora, RHEL, openSUSE), a pacman package (Arch) or `.tar.gz` with `install.sh` for the rest, x86_64 and ARM64. It installs the app and the tunnel service; the service starts at once and at every boot. Ubuntu 18.04, Debian 9, Fedora 28, RHEL 8, openSUSE Leap 15 or newer. The `.deb`, `.rpm` and pacman packages pull GTK 3 in; the tarball counts on the GTK 3 every desktop has, and `install.sh` says so when it is missing. The app finds updates itself and names them under Settings → About.
 
     sudo apt install ./susi-connect-linux-amd64.deb
     sudo dnf install ./susi-connect-linux-x86_64.rpm
