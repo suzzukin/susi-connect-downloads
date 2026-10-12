@@ -14,7 +14,7 @@ Client builds for android, windows and linux. Files only, no source.
 <p align="left">
   <a href="https://github.com/suzzukin/susi-connect-downloads/releases/latest/download/susi-connect-android.apk"><img alt="Download the APK" src="https://img.shields.io/badge/apk-android-1C1E20?style=for-the-badge&logo=android&logoColor=F7F8FA&labelColor=0F1113"></a>
   &nbsp;
-  <a href="https://github.com/suzzukin/susi-connect-downloads/releases/latest"><img alt="Download the installer" src="https://img.shields.io/badge/setup-windows-1C1E20?style=for-the-badge&logo=windows&logoColor=F7F8FA&labelColor=0F1113"></a>
+  <a href="https://github.com/suzzukin/susi-connect-downloads/releases/latest/download/susi-connect-windows-setup.exe"><img alt="Download the installer" src="https://img.shields.io/badge/setup-windows-1C1E20?style=for-the-badge&logo=windows&logoColor=F7F8FA&labelColor=0F1113"></a>
   &nbsp;
   <a href="https://github.com/suzzukin/susi-connect-downloads/releases/latest"><img alt="Download the package" src="https://img.shields.io/badge/deb%20%C2%B7%20rpm-linux-1C1E20?style=for-the-badge&logo=linux&logoColor=F7F8FA&labelColor=0F1113"></a>
 </p>
@@ -44,11 +44,9 @@ The package for your distribution, from the latest release: `.deb` (Ubuntu, Debi
 
 ## Контрольные суммы · Checksums
 
-В каждом релизе лежит `SHA256SUMS.txt`. · Every release ships `SHA256SUMS.txt`.
+В каждом релизе лежит `SHA256SUMS.txt`; скачайте его рядом с файлом. · Every release ships `SHA256SUMS.txt`; download it next to the file.
 
-    sha256sum susi-connect-android.apk
-    sha256sum susi-connect-windows-setup.exe
-    sha256sum susi-connect-linux-amd64.deb
+    sha256sum -c --ignore-missing SHA256SUMS.txt
 
 ## Поддержка · Support
 
