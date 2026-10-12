@@ -3,7 +3,7 @@
 #
 #     tools/publish-release.sh <platform> <version> <file> [file...]
 #     tools/publish-release.sh windows 1.0.0 ~/dist/SusiConnect-1.0.0-setup.exe
-#     tools/publish-release.sh linux 1.0.0 dist/pkg/*.deb dist/pkg/*.rpm dist/pkg/*.tar.gz dist/pkg/*.pkg.tar.zst
+#     tools/publish-release.sh linux 1.0.0 dist/pkg/*.deb dist/pkg/*.rpm dist/pkg/*.tar.gz dist/pkg/*.pkg.tar.zst packaging/linux.sh
 #
 # Why this exists rather than a plain `gh release create`: the README and the
 # TV install page link to `releases/latest/download/<stable name>`, and GitHub
@@ -26,7 +26,8 @@ STABLE_ALL="susi-connect-android.apk susi-connect-windows-setup.exe
 susi-connect-linux-amd64.deb susi-connect-linux-arm64.deb
 susi-connect-linux-x86_64.rpm susi-connect-linux-aarch64.rpm
 susi-connect-linux-amd64.tar.gz susi-connect-linux-arm64.tar.gz
-susi-connect-linux-amd64.pkg.tar.zst susi-connect-linux-arm64.pkg.tar.zst"
+susi-connect-linux-amd64.pkg.tar.zst susi-connect-linux-arm64.pkg.tar.zst
+susi-connect-linux.sh"
 
 # stable_name is the stable name a file publishes under, by platform and, for
 # Linux, by the architecture and format in its own name.
@@ -45,6 +46,7 @@ stable_name() {
         *-linux-arm64.tar.gz) echo "susi-connect-linux-arm64.tar.gz" ;;
         *-x86_64.pkg.tar.zst) echo "susi-connect-linux-amd64.pkg.tar.zst" ;;
         *-aarch64.pkg.tar.zst) echo "susi-connect-linux-arm64.pkg.tar.zst" ;;
+        linux.sh) echo "susi-connect-linux.sh" ;;
         *) echo "no stable name for $f" >&2; return 1 ;;
       esac ;;
   esac
