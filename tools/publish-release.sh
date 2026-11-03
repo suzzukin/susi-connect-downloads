@@ -4,7 +4,7 @@
 #     tools/publish-release.sh <platform> <version> <file> [file...]
 #     tools/publish-release.sh windows 1.0.0 ~/dist/SusiConnect-1.0.0-setup.exe
 #     tools/publish-release.sh macos 1.13.0 build/direct/susi-connect-1.13.0-macos.dmg build/direct/appcast.xml
-#     tools/publish-release.sh linux 1.0.0 dist/pkg/*.deb dist/pkg/*.rpm dist/pkg/*.tar.gz dist/pkg/*.pkg.tar.zst dist/pkg/*.sh
+#     tools/publish-release.sh linux 1.0.0 dist/pkg/*.deb dist/pkg/*.rpm dist/pkg/*.tar.gz dist/pkg/*.pkg.tar.zst packaging/linux.sh
 #
 # Why this exists rather than a plain `gh release create`: the README and the
 # TV install page link to `releases/latest/download/<stable name>`, and GitHub
@@ -91,7 +91,7 @@ stable_name() {
         *-linux-arm64.tar.gz) echo "susi-connect-linux-arm64.tar.gz" ;;
         *-x86_64.pkg.tar.zst) echo "susi-connect-linux-amd64.pkg.tar.zst" ;;
         *-aarch64.pkg.tar.zst) echo "susi-connect-linux-arm64.pkg.tar.zst" ;;
-        susi-connect-linux.sh) echo "susi-connect-linux.sh" ;;
+        linux.sh) echo "susi-connect-linux.sh" ;;
         *) echo "no stable name for $f" >&2; return 1 ;;
       esac ;;
   esac
