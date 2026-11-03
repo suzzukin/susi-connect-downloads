@@ -105,7 +105,7 @@ check_mac_release() {
 
   MOUNT="$(mktemp -d)"
   hdiutil attach -quiet -nobrowse -readonly -mountpoint "$MOUNT" "$DMG"
-  local info="$MOUNT/SusiConnect.app/Contents/Info.plist" feed_in_app local_ok short build
+  local info="$MOUNT/susi connect.app/Contents/Info.plist" feed_in_app local_ok short build
   feed_in_app="$(/usr/libexec/PlistBuddy -c 'Print :SUFeedURL' "$info")"
   local_ok="$(/usr/libexec/PlistBuddy -c 'Print :NSAppTransportSecurity:NSAllowsLocalNetworking' "$info" 2>/dev/null || true)"
   short="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$info")"
